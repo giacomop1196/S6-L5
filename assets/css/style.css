@@ -1,0 +1,166 @@
+body {
+    background-color: #141414;
+    color: #e5e5e5; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.netflix-header .navbar {
+    background-color: #141414; 
+    padding: 1rem 0;
+}
+
+.netflix-header .navbar-brand img {
+    height: 30px; 
+    width: auto;
+}
+
+.netflix-header .nav-link {
+    color: #e5e5e5 !important;
+    font-weight: 500;
+    margin-right: 1.2rem;
+}
+
+.netflix-header .nav-link.active {
+    font-weight: bold;
+}
+
+.netflix-header .dropdown-menu {
+    background-color: #000; 
+    border: none;
+}
+
+.netflix-header .dropdown-item {
+    color: #e5e5e5 !important;
+}
+
+.netflix-header .dropdown-item:hover {
+    background-color: #333;
+}
+
+.netflix-main {
+    padding-top: 80px; 
+}
+
+h2, h3 {
+    color: #e5e5e5;
+}
+
+.netflix-dropdown-btn {
+    background-color: #333;
+    border-color: #555;
+    color: #e5e5e5;
+    font-size: 0.9rem;
+    padding: 0.2rem 1rem;
+}
+
+.netflix-view-btn {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e5e5e5;
+    padding: 0.2rem 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.netflix-view-btn.active {
+    background-color: #e5e5e5;
+    color: #141414;
+}
+
+
+.netflix-row {
+    display: flex; 
+    overflow-x: auto; 
+    scrollbar-width: none;
+}
+
+.netflix-poster-wrapper {
+    flex: 0 0 auto; 
+    width: 16.666%; 
+    padding: 0 0.25rem; 
+    position: relative; 
+}
+
+@media (max-width: 1200px) { 
+    .netflix-poster-wrapper {
+        width: 20%; 
+    }
+}
+
+@media (max-width: 992px) { 
+    .netflix-poster-wrapper {
+        width: 25%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .netflix-poster-wrapper {
+        width: 33.333%; 
+    }
+}
+
+@media (max-width: 576px) { 
+    .netflix-poster-wrapper {
+        width: 50%; 
+    }
+}
+
+
+.netflix-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.netflix-poster-wrapper:hover .netflix-poster {
+    transform: scale(1.05); 
+}
+
+.netflix-poster-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.netflix-poster-wrapper:hover .netflix-poster-overlay {
+    display: block; 
+}
+
+
+/* Footer */
+.netflix-footer {
+    background-color: #141414;
+    border-top: 1px solid #333;
+    color: #808080; 
+    font-size: 0.8rem;
+}
+
+.netflix-footer a {
+    color: #808080;
+    text-decoration: none;
+}
+
+.netflix-footer a:hover {
+    color: #e5e5e5;
+}
+
+.netflix-service-code-btn {
+    color: #808080;
+    border-color: #808080;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.netflix-service-code-btn:hover {
+    color: #e5e5e5;
+    border-color: #e5e5e5;
+    background-color: transparent;
+}
