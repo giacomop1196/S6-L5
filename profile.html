@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="px-4 bg-netflix">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="/assets/img/netflix_logo.png" alt="Netflix Logo" width="90">
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <h1 class="text-white pb-3 border-bottom border-secondary border-opacity-25">Edit Profile</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 d-flex flex-column flex-md-row">
+                    <div class="mb-3 mb-md-0 me-md-3">
+                        <img src="./assets/img/avatar.png" alt="Profile Avatar" class="img-fluid rounded-0"
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <input type="text" class="form-control-plaintext text-white bg-secondary py-1 px-2 mb-3"
+                            value="Strive Student" disabled>
+
+                        <p class="text-white mb-2">Language:</p>
+                        <div class="dropdown mb-4">
+                            <button class="btn btn-dark border border-secondary dropdown-toggle text-white py-1"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Italiano</a></li>
+                                <li><a class="dropdown-item" href="#">Francese</a></li>
+                                <li><a class="dropdown-item" href="#">Spagnolo</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="pb-3 mb-4 border-bottom border-secondary border-opacity-25"></div>
+
+                        <p class="text-white mb-2">
+                            <span class="bg-secondary py-1 px-2">Maturity Settings:</span>
+                        </p>
+                        <a href="#" class="text-light fw-bold mb-2 d-inline-block text-decoration-none">ALL MATURITY
+                            RATINGS</a>
+                        <p class="text-white small mb-3">Show titles of all maturity ratings for this profile.</p>
+                        <button class="btn btn-outline-secondary rounded-0 text-uppercase">EDIT</button>
+
+                        <div class="pb-3 mb-4 mt-4 border-bottom border-secondary border-opacity-25"></div>
+
+                        <p class="text-white mb-3">Autoplay controls:</p>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input bg-secondary border-secondary" type="checkbox" value=""
+                                id="autoplayEpisode" checked>
+                            <label class="form-check-label text-white" for="autoplayEpisode">
+                                Autoplay next episode in a series on all devices.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input bg-secondary border-secondary" type="checkbox" value=""
+                                id="autoplayPreviews" checked>
+                            <label class="form-check-label text-white" for="autoplayPreviews">
+                                Autoplay previews while Browse on all devices.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 ">
+                <div
+                    class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 pt-4 border-top border-secondary border-opacity-25">
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <button class="btn btn-light rounded-0 text-dark px-4 py-2 text-uppercase">SAVE</button>
+                        <button class="btn btn-outline-secondary rounded-0 px-4 py-2 text-uppercase">CANCEL</button>
+                        <button class="btn btn-outline-secondary rounded-0 px-4 py-2 text-uppercase">DELETE
+                            PROFILE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
